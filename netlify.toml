@@ -2,6 +2,10 @@
   command = "npm run build"
   publish = "out"
 
+# Next.jsプラグインをスキップ
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
 # Netlifyでのページリロード時に404エラーを回避するための設定
 [[redirects]]
   from = "/*"
