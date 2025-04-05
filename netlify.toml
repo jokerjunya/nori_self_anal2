@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+# Netlifyでのページリロード時に404エラーを回避するための設定
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
